@@ -26,7 +26,7 @@ def vis_depth_matplotlib(img, Z, elevation=60, azimuth=45, stride=5):
     from matplotlib.colors import LightSource
 
     fig = plt.figure()
-    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(projection='3d')
 
     # Create X and Y data
     x = np.arange(0, 512, 1)
